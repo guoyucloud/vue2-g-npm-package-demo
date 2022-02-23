@@ -1,14 +1,39 @@
 {
   "name": "vue2-g-npm-package-demo",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": "guoyu <120098866@qq.com>",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name vue2-g-npm-package-demo --dest lib packages/index.js"
+  },
+  "main": "lib/vue2-g-npm-package-demo.umd.min.js",
+  "files": [
+    "lib",
+    "examples",
+    "packages",
+    "types"
+  ],
+  "homepage": "https://github.com/guoyucloud/vue2-g-npm-package-demo",
+  "keywords": [
+    "vue",
+    "code",
+    "vue2-g-npm-package-demo",
+    "vue2-g-npm-package-demo code",
+    "guoyucloud",
+    "guoyucloud code",
+    "guoyucloud vue2-g-npm-package-demo"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:guoyucloud/vue2-g-npm-package-demo.git"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "element-ui": "^2.4.5",
     "vue": "^2.6.14"
   },
   "devDependencies": {
@@ -19,6 +44,10 @@
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "vue-cli-plugin-element": "^1.0.1",
     "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
